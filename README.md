@@ -1,1 +1,2 @@
-TODO: Add some info here
+## Overview
+This repository contains some exaples of ways to use the Admin Client to interact with Apache Kafka, focusing on Confluent Cloud. There are currently two Java classes you can reference in your own application. The first is the `AdminClientExample` class that contains the methods used to setup the `AdminClient` object and interact with the cluster. The `RunAdminClient` class contains the main method that invokes methods of `AdminClientExample` to creat an instance of the `AdminClient` and interact with the cluster.
