@@ -17,9 +17,7 @@ public class AdminClientExample {
         Properties props = new Properties();
         props.setProperty("ssl.endpoint.identification.algorithm", "https");
         props.setProperty("sasl.mechanism", "PLAIN");
-        props.setProperty(AdminClientConfig.REQUEST_TIMEOUT_MS_CONFIG, "20000");
         props.setProperty(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, "<broker_endpoint>");
-        props.setProperty(AdminClientConfig.RETRY_BACKOFF_MS_CONFIG, "500");
         props.setProperty("sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"<API_KEY>\" password=\"<API_SECRET>\";");
         props.setProperty(AdminClientConfig.SECURITY_PROTOCOL_CONFIG, "SASL_SSL");
         client = AdminClient.create(props);
